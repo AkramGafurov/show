@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.add__submit,
+.plan__edit,
+.plan__save,
+.completed__edit {
+  width: 46px;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  color: #888;
+  border: 0px;
+  background: none;
+  cursor: pointer;
+}
+.add__submit:hover,
+.plan__edit:hover,
+.plan__save:hover,
+.completed__edit:hover {
+  color: #0FC57C;
+}
+.todo {
+  color: #333;
+  font-family: Lato, sans-serif;
+  background-color: #f8f8f8;
+}
+.todo__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom:20px;
+}
+.header__img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.header__link-info {
+  font-family: "Fantasy", cursive;
+  align-self: flex-end;
+  font-size: 10.37px;
+  padding-right: 101px;
+}
+.todo__content {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.todo-content__add {
+  margin-bottom: 66px;
+}
+.add__title,
+.plan__title,
+.completed__title {
+  padding-bottom: 19px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-bottom: 2px black solid;
+}
+.add__task {
+  width: 440px;
+  height: 21px;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #888;
+  border: 1px solid #dDd;
+  background: #FFF;
+  border-radius: 6px; 
+}
+.plan__task,
+.completed__task {
+  display: flex;
+  flex-grow: 1;
+  width: 56%;
+  padding-left: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+.plan__delete,
+.completed__delete {
+  width: 60px;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  color: #888;
+  border: 0px;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+.plan__img,
+.completed__img {
+  height: 2em;
+    transform: rotateZ(45deg);
+    transition: transform 200ms ease-in;
+}
+.plan__img:hover,
+.completed__img:hover {
+  transform: rotateZ(0);
+}
+.plan__item,
+.completed__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.plan__check,
+.completed__check {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+.completed__input,
+.plan__input {
+  display:none
+}
+
+.edit .plan__input,
+.edit .completed__input {
+  display: flex;
+  width: 69%;
+   padding-left: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.edit .plan__task,
+.edit .completed__task {
+  display: none;
+}
+
