@@ -83,6 +83,9 @@
   font-size: 18px;
   box-sizing: border-box;
 }
+.completed__task {
+  text-decoration: line-through;
+}
 .plan__delete,
 .completed__delete {
   width: 60px;
